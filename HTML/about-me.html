@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Portfolio-Manuel</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <ul class="nav">
+            <li class="nombre">Manuel Fern&aacute;ndez</li>
+            <li><a href="../indexEn.html"><span>#</span> home</a></li>
+            <li><a href="projects.html"><span>#</span> projects</a></li>
+            <li><a href="about-me.html"><span>#</span> about-me</a></li>
+            <li><select id="languageSelect">
+                    <option>ES</option>
+                    <option>EN</option>
+                </select></li>
+        </ul>
+        <script>
+            // Función para redirigir cuando se cambia la opción seleccionada
+            document.getElementById("languageSelect").onchange = function () {
+                var selectedValue = this.value;
+                if (selectedValue === "ES") {
+                    window.location.href = "sobre-mi.html";
+                }
+            };
+        </script>
+    </header>
+    <main>
+        <br><br>
+        <h1><span>#</span>about-me
+        </h1><br>
+        <div class="sobre-mi">
+            <h5>Hello I am Manuel! <br><br>
+                I am from Mérida (Spain) and I am a web designer,
+                I also like the field of telecommunications and networks since I am a Senior Technician
+                in Network Information Systems Administration.<br><br>
+                I am currently studying a Higher Degree in Web Application Development at the institute
+                Albarregas in Mérida (Spain).<br><br>
+                I am proactive, creative and above all I like teamwork and being able to help others.<br>
+            </h5><br><br>
+        </div><br><br>
+        <h1><span>#</span>skills
+        </h1><br>
+        <div class="habilidades">
+            <table>
+                <tr>
+                    <th>Lenguages</th>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                </tr>
+                <tr>
+                    <td>PHP</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>Data base</th>
+                </tr>
+                <tr>
+                    <td>MySQL</td>
+                </tr>
+                <tr>
+                    <td>MongoDB</td>
+                </tr>
+                <tr>
+                    <td>SQL</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>Tools</th>
+                </tr>
+                <tr>
+                    <td>VSCode</td>
+                </tr>
+                <tr>
+                    <td>Netbeans</td>
+                </tr>
+                <tr>
+                    <td>VirtualBox</td>
+                </tr>
+                <tr>
+                    <td>GitHub</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>Server mount</th>
+                </tr>
+                <tr>
+                    <td>SSH</td>
+                </tr>
+                <tr>
+                    <td>Proxy</td>
+                </tr>
+                <tr>
+                    <td>Apache</td>
+                </tr>
+                <tr>
+                    <td>DHCP</td>
+                </tr>
+                <tr>
+                    <td>DNS</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>Others</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                </tr>
+                <tr>
+                    <td>XML</td>
+                </tr>
+                <tr>
+                    <td>C++</td>
+                </tr>
+                <tr>
+                    <td>Batch scheduling</td>
+                </tr>
+                <tr>
+                    <td>Bourne Shell</td>
+                </tr>
+            </table>
+        </div>
+        <h1><span>#</span>about-me
+            <hr>
+        </h1><br>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

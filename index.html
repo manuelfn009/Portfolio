@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Portfolio-Manuel</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <ul class="nav">
+            <li class="nombre">Manuel Fern&aacute;ndez</li>
+            <li><a href="index.html"><span>#</span> inicio</a></li>
+            <li><a href="HTML/proyectos.html"><span>#</span> proyectos</a></li>
+            <li><a href="HTML/sobre-mi.html"><span>#</span> sobre-mi</a></li>
+            <li><select id="languageSelect">
+                <option>ES</option>
+                <option>EN</option>
+            </select></li>
+        </ul>
+        <script>
+            // Función para redirigir cuando se cambia la opción seleccionada
+            document.getElementById("languageSelect").onchange = function() {
+                var selectedValue = this.value;
+                if (selectedValue === "EN") {
+                    window.location.href = "indexEn.html";
+                }
+            };
+        </script>
+    </header>
+    <main>
+        <div class="introduccion">
+            <div class="texto">
+                <h3>Me llamo Manuel, y me gustaría ser <span>diseñador web</span>.
+                </h3><br>
+                <h5>He creado varias páginas web responsivas, creativas e innovadoras.</h5><br>
+                <a href="HTML/contacto.html" class="btn">Contáctame 📲</a>
+            </div>
+            <div class="foto">
+                <img src="IMG/css.gif" class="foto1">
+            </div>
+        </div>
+        <h1><span>#</span>proyectos
+            <hr>
+        </h1><br>
+        <div class="proyectos">
+
+            <div class="proyecto" data-link="https://github.com/manuelfn009/FNManuelPracticaAula">
+                <img src="IMG/DWES.png">
+                <h4>Proyectos DWES</h4>
+                <h5>Proyectos creados en Desarrollo Web en Entorno Servidor en DAW2</h5>
+            </div>
+            <div class="proyecto" data-link="https:/github.com/manuelfn009/TareasDWEC">
+                <img src="IMG/JavaScript.jpg">
+                <h4>Proyectos DWEC</h4>
+                <h5>Proyectos creados en Desarrollo Web en Entorno Cliente en DAW2</h5>
+            </div>
+            <div class="proyecto" data-link="https:/github.com/manuelfn009/DIW">
+                <img src="IMG/css.jpg">
+                <h4>Proyectos DIW</h4>
+                <h5>Proyectos creados en Diseño de Aplicaciones Web en DAW2</h5>
+            </div>
+        </div>
+        <script>
+            // Obtener todos los elementos con la clase "proyecto"
+            var clickableDivs = document.querySelectorAll('.proyecto');
+    
+            // Agregar un controlador de eventos de clic a cada div
+            clickableDivs.forEach(function(div) {
+                div.addEventListener('click', function() {
+                    // Obtener el enlace del atributo "data-link"
+                    var link = this.getAttribute('data-link');
+                    if (link) {
+                        // Redirigir a la URL
+                        window.location.href = link;
+                    }
+                });
+            });
+        </script>
+        <a href="HTML/proyectos.html" class="saberMas">Saber más ➡️</a>
+        <h1><span>#</span>habilidades
+        <hr>
+    </h1><br>
+    <div class="habilidades">
+        <table>
+            <tr>
+                <th>Lenguajes</th>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+            </tr>
+            <tr>
+                <td>Java</td>
+            </tr>
+            <tr>
+                <td>PHP</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>Bases de datos</th>
+            </tr>
+            <tr>
+                <td>MySQL</td>
+            </tr>
+            <tr>
+                <td>MongoDB</td>
+            </tr>
+            <tr>
+                <td>SQL</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>Herramientas</th>
+            </tr>
+            <tr>
+                <td>VSCode</td>
+            </tr>
+            <tr>
+                <td>Netbeans</td>
+            </tr>
+            <tr>
+                <td>VirtualBox</td>
+            </tr>
+            <tr>
+                <td>GitHub</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>Montajes de servidores</th>
+            </tr>
+            <tr>
+                <td>SSH</td>
+            </tr>
+            <tr>
+                <td>Proxy</td>
+            </tr>
+            <tr>
+                <td>Apache</td>
+            </tr>
+            <tr>
+                <td>DHCP</td>
+            </tr>
+            <tr>
+                <td>DNS</td>
+            </tr>      
+        </table>
+        <table>
+            <tr>
+                <th>Otros</th>
+            </tr>
+            <tr>
+                <td>HTML</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+            </tr>
+            <tr>
+                <td>XML</td>
+            </tr>
+            <tr>
+                <td>C++</td>
+            </tr>
+            <tr>
+                <td>Programación en Lote</td>
+            </tr>  
+            <tr>
+                <td>Bourne Shell</td>
+            </tr>      
+        </table>
+    </div>
+    <h1><span>#</span>sobre-mí
+        <hr>
+    </h1><br>
+    <div class="sobre-mi">
+        <div>
+        <h5>Hola, soy Manuel! <br><br>
+            Soy de Mérida (España) y me gustaria ser diseñador web, 
+            tambien me gusta el ámbito de las telecomunicaciones y redes ya que soy Tecnico Superior
+            en Administración de Sistemas Informaticos en Red.<br><br>
+            Actualmente estoy estudiando un Grado Superior de Desarrollo de Aplicaciones Web en el instituto
+            Albarregas en Mérida (España).<br><br>
+            Soy proactivo, creativo y sobretodo me gusta el trabajo en equipo y poder ayudar a los demás.<br>            
+        </h5><br>
+        <a href="sobre-mi.html" class="btn">Leer más 👇</a><br></div>
+        <img src="IMG/html5.gif" class="gif">
+    </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

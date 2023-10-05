@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="EN">
+
+<head>
+    <title>Portfolio-Manuel</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <ul class="nav">
+            <li class="nombre">Manuel Fern&aacute;ndez</li>
+            <li><a href="ind3exEn.html"><span>#</span> home</a></li>
+            <li><a href="HTML/projects.html"><span>#</span> projects</a></li>
+            <li><a href="HTML/about-me.html"><span>#</span> about-me</a></li>
+            <li><select id="languageSelect">
+
+                    <option>EN</option>
+                    <option>ES</option>
+                </select></li>
+        </ul>
+        <script>
+            document.getElementById("languageSelect").onchange = function () {
+                var selectedValue = this.value;
+                if (selectedValue === "ES") {
+                    window.location.href = "index.html";
+                }
+            };
+        </script>
+    </header>
+    <main>
+        <div class="introduccion">
+            <div class="texto">
+                <h3>My name is Manuel, and I would like to be <span>Web designer</span>
+                </h3><br>
+                <h5>I have created several responsive, creative and innovative websites.</h5><br>
+                <a href="contacto.html" class="btn">Contact me 📲</a>
+            </div>
+            <div class="foto">
+                <img src="IMG/css.gif" class="foto1">
+            </div>
+
+        </div>
+        <h1><span>#</span>projects
+            <hr>
+        </h1><br>
+        <div class="proyectos">
+
+            <div class="proyecto" data-link=https://github.com/manuelfn009/FNManuelPracticaAula">
+                <img src="IMG/DWES.png">
+                <h4>WDSE's projects</h4>
+                <h5>Projects created in Web Development in Server Environment in DAW2</h5>
+            </div>
+            <div class="proyecto" data-link="https:/github.com/manuelfn009/TareasDWEC">
+                <img src="IMG/JavaScript.jpg">
+                <h4>WDCE's projects</h4>
+                <h5>Projects created in Web Development in Client Environment in DAW2</h5>
+            </div>
+            <div class="proyecto" data-link="https:/github.com/manuelfn009/DIW">
+                <img src="IMG/css.jpg">
+                <h4>WAD's projects</h4>
+                <h5>Projects created in Web Application Design in DAW2</h5>
+            </div>
+        </div>
+        <script>
+            // Obtener todos los elementos con la clase "proyecto"
+            var clickableDivs = document.querySelectorAll('.proyecto');
+    
+            // Agregar un controlador de eventos de clic a cada div
+            clickableDivs.forEach(function(div) {
+                div.addEventListener('click', function() {
+                    // Obtener el enlace del atributo "data-link"
+                    var link = this.getAttribute('data-link');
+                    if (link) {
+                        // Redirigir a la URL
+                        window.location.href = link;
+                    }
+                });
+            });
+        </script>
+        <a href="HTML/proyectos.html" class="saberMas">Know more ➡️</a>
+        <h1><span>#</span>skills
+            <hr>
+        </h1><br>
+        <div class="habilidades">
+            <table>
+                <tr>
+                    <th>Lenguages</th>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                </tr>
+                <tr>
+                    <td>PHP</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>Data base</th>
+                </tr>
+                <tr>
+                    <td>MySQL</td>
+                </tr>
+                <tr>
+                    <td>MongoDB</td>
+                </tr>
+                <tr>
+                    <td>SQL</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>Tools</th>
+                </tr>
+                <tr>
+                    <td>VSCode</td>
+                </tr>
+                <tr>
+                    <td>Netbeans</td>
+                </tr>
+                <tr>
+                    <td>VirtualBox</td>
+                </tr>
+                <tr>
+                    <td>GitHub</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>Server mount</th>
+                </tr>
+                <tr>
+                    <td>SSH</td>
+                </tr>
+                <tr>
+                    <td>Proxy</td>
+                </tr>
+                <tr>
+                    <td>Apache</td>
+                </tr>
+                <tr>
+                    <td>DHCP</td>
+                </tr>
+                <tr>
+                    <td>DNS</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>Others</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                </tr>
+                <tr>
+                    <td>XML</td>
+                </tr>
+                <tr>
+                    <td>C++</td>
+                </tr>
+                <tr>
+                    <td>Batch scheduling</td>
+                </tr>
+                <tr>
+                    <td>Bourne Shell</td>
+                </tr>
+            </table>
+        </div>
+        <h1><span>#</span>about-me
+            <hr>
+        </h1><br>
+        <div class="sobre-mi">
+        <div>
+
+            <h5>Hello I am Manuel! <br><br>
+                I am from Mérida (Spain) and I am a web designer,
+                I also like the field of telecommunications and networks since I am a Senior Technician
+                in Network Information Systems Administration.<br><br>
+                I am currently studying a Higher Degree in Web Application Development at the institute
+                Albarregas in Mérida (Spain).<br><br>
+                I am proactive, creative and above all I like teamwork and being able to help others.<br>
+            </h5><br>
+            <a href="sobre-mi.html" class="btn">Read more 👇</a></div>
+            <img src="IMG/html5.gif" class="gif">
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

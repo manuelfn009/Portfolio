@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Portfolio-Manuel</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <ul class="nav">
+            <li class="nombre">Manuel Fern&aacute;ndez</li>
+            <li><a href="../index.html"><span>#</span> inicio</a></li>
+            <li><a href="proyectos.html"><span>#</span> proyectos</a></li>
+            <li><a href="sobre-mi.html"><span>#</span> sobre-mi</a></li>
+            <li><select id="languageSelect">
+                    <option>ES</option>
+                    <option>EN</option>
+                </select></li>
+        </ul>
+        <script>
+            // Función para redirigir cuando se cambia la opción seleccionada
+            document.getElementById("languageSelect").onchange = function () {
+                var selectedValue = this.value;
+                if (selectedValue === "EN") {
+                    window.location.href = "../indexEn.html";
+                }
+            };
+        </script>
+    </header>
+    <main>
+        <br>
+        <div class="proyectos">
+
+            <div class="proyecto" data-link="https://github.com/manuelfn009/FNManuelPracticaAula">
+                <img src="../IMG/DWES.png">
+                <h4>Proyectos DWES</h4>
+                <h5>Proyectos creados en Desarrollo Web en Entorno Servidor en DAW2</h5>
+            </div>
+            <div class="proyecto" data-link="https:/github.com/manuelfn009/TareasDWEC">
+                <img src="../IMG/JavaScript.jpg">
+                <h4>Proyectos DWEC</h4>
+                <h5>Proyectos creados en Desarrollo Web en Entorno Cliente en DAW2</h5>
+            </div>
+            <div class="proyecto" data-link="https:/github.com/manuelfn009/DIW">
+                <img src="../IMG/css.jpg">
+                <h4>Proyectos DIW</h4>
+                <h5>Proyectos creados en Diseño de Aplicaciones Web en DAW2</h5>
+            </div>
+        </div>
+    <div class="proyectosf2">
+        <div class="proyecto" data-link="https:/github.com/manuelfn009/DIW">
+            <img src="../IMG/portfolio.jpeg">
+            <h4>Mi portfolio</h4>
+            <h5>Portfolio personal creado desde 0 en HTML y CSS</h5>
+        </div>
+    </div>
+    
+    <script>
+        // Obtener todos los elementos con la clase "proyecto"
+        var clickableDivs = document.querySelectorAll('.proyecto');
+
+        // Agregar un controlador de eventos de clic a cada div
+        clickableDivs.forEach(function(div) {
+            div.addEventListener('click', function() {
+                // Obtener el enlace del atributo "data-link"
+                var link = this.getAttribute('data-link');
+                if (link) {
+                    // Redirigir a la URL
+                    window.location.href = link;
+                }
+            });
+        });
+    </script>
+</main>
+</body>
+
+</html>
