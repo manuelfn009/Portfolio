@@ -17,13 +17,13 @@
             <li><a href="HTML/proyectos.html"><span>#</span> proyectos</a></li>
             <li><a href="HTML/sobre-mi.html"><span>#</span> sobre-mi</a></li>
             <li><select id="languageSelect">
-                <option>ES</option>
-                <option>EN</option>
-            </select></li>
+                    <option>ES</option>
+                    <option>EN</option>
+                </select></li>
         </ul>
         <script>
             // Función para redirigir cuando se cambia la opción seleccionada
-            document.getElementById("languageSelect").onchange = function() {
+            document.getElementById("languageSelect").onchange = function () {
                 var selectedValue = this.value;
                 if (selectedValue === "EN") {
                     window.location.href = "indexEn.html";
@@ -37,7 +37,7 @@
                 <h3>Me llamo Manuel, y me gustaría ser <span>diseñador web</span>.
                 </h3><br>
                 <h5>He creado varias páginas web responsivas, creativas e innovadoras.</h5><br>
-                <a href="HTML/contacto.html" class="btn">Contáctame 📲</a>
+                <a href="mailto:mfernandezn009@gmail.com" class="btn">Contáctame 📲</a>
             </div>
             <div class="foto">
                 <img src="IMG/css.gif" class="foto1">
@@ -67,10 +67,10 @@
         <script>
             // Obtener todos los elementos con la clase "proyecto"
             var clickableDivs = document.querySelectorAll('.proyecto');
-    
+
             // Agregar un controlador de eventos de clic a cada div
-            clickableDivs.forEach(function(div) {
-                div.addEventListener('click', function() {
+            clickableDivs.forEach(function (div) {
+                div.addEventListener('click', function () {
                     // Obtener el enlace del atributo "data-link"
                     var link = this.getAttribute('data-link');
                     if (link) {
@@ -82,117 +82,123 @@
         </script>
         <a href="HTML/proyectos.html" class="saberMas">Saber más ➡️</a>
         <h1><span>#</span>habilidades
-        <hr>
-    </h1><br>
-    <div class="habilidades">
-        <table>
-            <tr>
-                <th>Lenguajes</th>
-            </tr>
-            <tr>
-                <td>JavaScript</td>
-            </tr>
-            <tr>
-                <td>Java</td>
-            </tr>
-            <tr>
-                <td>PHP</td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <th>Bases de datos</th>
-            </tr>
-            <tr>
-                <td>MySQL</td>
-            </tr>
-            <tr>
-                <td>MongoDB</td>
-            </tr>
-            <tr>
-                <td>SQL</td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <th>Herramientas</th>
-            </tr>
-            <tr>
-                <td>VSCode</td>
-            </tr>
-            <tr>
-                <td>Netbeans</td>
-            </tr>
-            <tr>
-                <td>VirtualBox</td>
-            </tr>
-            <tr>
-                <td>GitHub</td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <th>Montajes de servidores</th>
-            </tr>
-            <tr>
-                <td>SSH</td>
-            </tr>
-            <tr>
-                <td>Proxy</td>
-            </tr>
-            <tr>
-                <td>Apache</td>
-            </tr>
-            <tr>
-                <td>DHCP</td>
-            </tr>
-            <tr>
-                <td>DNS</td>
-            </tr>      
-        </table>
-        <table>
-            <tr>
-                <th>Otros</th>
-            </tr>
-            <tr>
-                <td>HTML</td>
-            </tr>
-            <tr>
-                <td>CSS</td>
-            </tr>
-            <tr>
-                <td>XML</td>
-            </tr>
-            <tr>
-                <td>C++</td>
-            </tr>
-            <tr>
-                <td>Programación en Lote</td>
-            </tr>  
-            <tr>
-                <td>Bourne Shell</td>
-            </tr>      
-        </table>
-    </div>
-    <h1><span>#</span>sobre-mí
-        <hr>
-    </h1><br>
-    <div class="sobre-mi">
-        <div>
-        <h5>Hola, soy Manuel! <br><br>
-            Soy de Mérida (España) y me gustaria ser diseñador web, 
-            tambien me gusta el ámbito de las telecomunicaciones y redes ya que soy Tecnico Superior
-            en Administración de Sistemas Informaticos en Red.<br><br>
-            Actualmente estoy estudiando un Grado Superior de Desarrollo de Aplicaciones Web en el instituto
-            Albarregas en Mérida (España).<br><br>
-            Soy proactivo, creativo y sobretodo me gusta el trabajo en equipo y poder ayudar a los demás.<br>            
-        </h5><br>
-        <a href="sobre-mi.html" class="btn">Leer más 👇</a><br></div>
-        <img src="IMG/html5.gif" class="gif">
-    </div>
+            <hr>
+        </h1><br>
+        <div class="habilidades">
+            <table>
+                <tr>
+                    <th>Lenguajes</th>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                </tr>
+                <tr>
+                    <td>PHP</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>Bases de datos</th>
+                </tr>
+                <tr>
+                    <td>MySQL</td>
+                </tr>
+                <tr>
+                    <td>MongoDB</td>
+                </tr>
+                <tr>
+                    <td>SQL</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>Herramientas</th>
+                </tr>
+                <tr>
+                    <td>VSCode</td>
+                </tr>
+                <tr>
+                    <td>Netbeans</td>
+                </tr>
+                <tr>
+                    <td>VirtualBox</td>
+                </tr>
+                <tr>
+                    <td>GitHub</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>Montajes de servidores</th>
+                </tr>
+                <tr>
+                    <td>SSH</td>
+                </tr>
+                <tr>
+                    <td>Proxy</td>
+                </tr>
+                <tr>
+                    <td>Apache</td>
+                </tr>
+                <tr>
+                    <td>DHCP</td>
+                </tr>
+                <tr>
+                    <td>DNS</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>Otros</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                </tr>
+                <tr>
+                    <td>XML</td>
+                </tr>
+                <tr>
+                    <td>C++</td>
+                </tr>
+                <tr>
+                    <td>Programación en Lote</td>
+                </tr>
+                <tr>
+                    <td>Bourne Shell</td>
+                </tr>
+            </table>
+        </div>
+        <h1><span>#</span>sobre-mí
+            <hr>
+        </h1><br>
+        <div class="sobre-mi">
+            <div>
+                <h5>Hola, soy Manuel! <br><br>
+                    Soy de Mérida (España) y me gustaria ser diseñador web,
+                    tambien me gusta el ámbito de las telecomunicaciones y redes ya que soy Tecnico Superior
+                    en Administración de Sistemas Informaticos en Red.<br><br>
+                    Actualmente estoy estudiando un Grado Superior de Desarrollo de Aplicaciones Web en el instituto
+                    Albarregas en Mérida (España).<br><br>
+                    Soy proactivo, creativo y sobretodo me gusta el trabajo en equipo y poder ayudar a los demás.<br>
+                </h5><br>
+                <a href="sobre-mi.html" class="btn">Leer más 👇</a><br>
+            </div>
+            <img src="IMG/html5.gif" class="gif">
+        </div>
     </main>
     <footer>
-
+        <h5 class="footerh5">© Copyright 2023. Hecho por Manuel.</h5>
+        <div class="iconos">
+           <a href="https://github.com/manuelfn009" ><img src="IMG/github.png" class="icons"></a>
+           <a href="https://www.linkedin.com/in/manuel-fernandez-nevado-014b71225/" ><img src="IMG/linkedin.png" class="icons"></a>
+           <a href="https://www.instagram.com/manuelfn009/?hl=es" ><img src="IMG/instagram (4).png" class="icons"></a>
+        </div>
     </footer>
 </body>
 

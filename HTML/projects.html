@@ -13,20 +13,20 @@
     <header>
         <ul class="nav">
             <li class="nombre">Manuel Fern&aacute;ndez</li>
-            <li><a href="../index.html"><span>#</span> inicio</a></li>
-            <li><a href="proyectos.html"><span>#</span> proyectos</a></li>
-            <li><a href="sobre-mi.html"><span>#</span> sobre-mi</a></li>
+            <li><a href="../indexEn.html"><span>#</span> home</a></li>
+            <li><a href="projects.html"><span>#</span> projects</a></li>
+            <li><a href="about-me.html"><span>#</span> about-me</a></li>
             <li><select id="languageSelect">
-                    <option>ES</option>
                     <option>EN</option>
+                    <option>ES</option>
                 </select></li>
         </ul>
         <script>
             // Función para redirigir cuando se cambia la opción seleccionada
             document.getElementById("languageSelect").onchange = function () {
                 var selectedValue = this.value;
-                if (selectedValue === "EN") {
-                    window.location.href = "../indexEn.html";
+                if (selectedValue === "ES") {
+                    window.location.href = "proyectos.html";
                 }
             };
         </script>
@@ -34,28 +34,27 @@
     <main>
         <br>
         <div class="proyectos">
-
-            <div class="proyecto" data-link="https://github.com/manuelfn009/FNManuelPracticaAula">
+            <div class="proyecto" data-link=https://github.com/manuelfn009/FNManuelPracticaAula">
                 <img src="../IMG/DWES.png">
-                <h4>Proyectos DWES</h4>
-                <h5>Proyectos creados en Desarrollo Web en Entorno Servidor en DAW2</h5>
+                <h4>WDSE's projects</h4>
+                <h5>Projects created in Web Development in Server Environment in DAW2</h5>
             </div>
             <div class="proyecto" data-link="https:/github.com/manuelfn009/TareasDWEC">
                 <img src="../IMG/JavaScript.jpg">
-                <h4>Proyectos DWEC</h4>
-                <h5>Proyectos creados en Desarrollo Web en Entorno Cliente en DAW2</h5>
+                <h4>WDCE's projects</h4>
+                <h5>Projects created in Web Development in Client Environment in DAW2</h5>
             </div>
             <div class="proyecto" data-link="https:/github.com/manuelfn009/DIW">
                 <img src="../IMG/css.jpg">
-                <h4>Proyectos DIW</h4>
-                <h5>Proyectos creados en Diseño de Aplicaciones Web en DAW2</h5>
+                <h4>WAD's projects</h4>
+                <h5>Projects created in Web Application Design in DAW2</h5>
             </div>
         </div>
     <div class="proyectosf2">
         <div class="proyecto" data-link="https://github.com/manuelfn009/Portfolio">
             <img src="../IMG/portfolio.jpeg">
-            <h4>Mi portfolio</h4>
-            <h5>Portfolio personal creado desde 0 en HTML y CSS</h5>
+            <h4>My portfolio</h4>
+            <h5>Personal portfolio created from scratch in HTML and CSS</h5>
         </div>
     </div>
     
@@ -77,7 +76,7 @@
     </script>
 </main>
 <footer>
-    <h5 class="footerh5">© Copyright 2023. Hecho por Manuel.</h5>
+    <h5 class="footerh5">© Copyright 2023. Made by Manuel.</h5>
     <div class="iconos">
        <a href="https://github.com/manuelfn009" ><img src="../IMG/github.png" class="icons"></a>
        <a href="https://www.linkedin.com/in/manuel-fernandez-nevado-014b71225/" ><img src="../IMG/linkedin.png" class="icons"></a>
