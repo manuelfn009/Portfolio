@@ -55,7 +55,7 @@ hr{
     width: 70vw;
     background-color: #C778DD;
 }
-.proyectos, .introduccion, .habilidades, ul, .sobre-mi{
+.proyectos, .introduccion, .habilidades, ul, .sobre-mi, .proyectosf2{
     width: 100vw;
     display: flex;
     align-items: flex-end;
@@ -203,3 +203,7 @@ select, .nombre{
     margin-left: 600px;
     align-items: flex-end;
 }
+@media (max-width: 335px)  {
+    .day{
+      padding: 5px;
+    }}
