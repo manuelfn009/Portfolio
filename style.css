@@ -75,6 +75,7 @@ hr{
 
 .proyecto:hover{
     background-color: #4d4b4b;
+    cursor: pointer;
 }
 
 
