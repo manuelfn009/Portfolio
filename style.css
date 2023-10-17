@@ -55,7 +55,7 @@ hr{
     width: 70vw;
     background-color: #C778DD;
 }
-.proyectos, .introduccion, .habilidades, ul, .sobre-mi, .proyectosf2{
+.proyectos, .introduccion, .habilidades, ul, .sobre-mi, .proyectosf2, .proyectosf3{
     width: 100vw;
     display: flex;
     align-items: flex-end;
